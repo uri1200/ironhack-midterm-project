@@ -4,161 +4,169 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style/style.css">
     <title>Circle Agency</title>
 </head>
-<body>
-    <header>
-        <div class="header-div">
-            <nav>
+<body class="mx-auto my-0">
+    <div class="bg-[#f2f4fc] flex flex-columns flex-col ">
+        <header>
+            <div class="header-div flex flex-row">
                 <div class="nav-1">
-                    <h1>Circle</h1>
+                    <h1 class="text-4xl">Circle</h1>
                 </div>
-                <div class="nav-2">
-                    <ul>
+                <nav class="nav-2">
+                    <ul class="flex flex-row space-x-4 ">
                         <li>Home</li>
                         <li>Projects</li>
                         <li>Services</li>
                     </ul>
-                </div>
+                </nav>
                 <div class="nav-3">
                     <a href="contact.html">Contact Us</a>
                 </div>
-            </nav>
-        </div>
-    </header>
-
-    <section class="section-1">
-        <div class="section-1-div">
-            <div class="section-1-text">
-                <h1>Empower Your Business With Stunning Design!</h1>
-                <p>Circle is a digital design  and development studio. We can design and develop astonishing websites and mobbile apps.</p>
-                <a href="#">Get in touch</a>
-                <a href="#">See our work</a>
             </div>
-            <div class="section-1-hero">
-                <img src="media/hero-section/card-1.png" alt="card-1">
-                <img src="media/hero-section/card-2.png" alt="card-2">
-                <img src="media/hero-section/hero-image.png" alt="brazos-cruzados">
-            </div>
-        </div>
+        </header>
 
-    </section>
-
-    <section class="section-2">
-        <div class="section-2-logos">
-            <img src="media/logos/airbnb-logo.svg" alt="airbnb-logo">
-            <img src="media/logos/google-logo.svg" alt="google-logo">
-            <img src="media/logos/microsoft-logo.svg" alt="microsoft-logo">
-            <img src="media/logos/fedex-logo.svg" alt="fedex-logo">
-            <img src="media/logos/amazon-logo.svg" alt="amazon-logo">
-        </div>
-    </section>
-    <section class="section-3">
-        <div class="section-3-div">
-            <div class="section-3-header">
-                <h1>Recent Projects</h1>
-            </div>
-            <div class="section-3-cards">
-                <div role="list" class="section-3-cards-card">
-                    <img src="media/projects-section/1.jpg" alt="">
-                    <h1>Simplify</h1>
-                    <p>UI Design & App Development</p>
-                    <a href="simplify.html">Learn More</a>
+        <section class="section-1 w-[85%] mx-auto">
+            <div class="section-1-div flex flex-col">
+                <div class="section-1-div-text text-center flex flex-col items-center">
+                    <h1 class="text-[30px] text[#292e47] mt-5 mb-[30px] font-semibold">Empower Your Business With Stunning Design!</h1>
+                    <p class="mb-12">Circle is a digital design  and development studio. We can design and develop astonishing websites and mobbile apps.</p>
+                    <a class="bg-[#072ac8] text-white px-[30px] py-[15px] mb-5" href="#">Get in touch</a>
+                    <a class="text-[#6b708d] font-medium px-[30px] py-[15px]" href="#">See our work</a>
                 </div>
-                <div role="list" class="section-3-cards-card">
-                    <img src="media/projects-section/2.jpg" alt="">
-                    <h1>Dashcoin</h1>
-                    <p>Web Development</p>
-                    <a href="dashcoin.html">Learn More</a>
-                </div>
-                <div role="list" class="section-3-cards-card">
-                    <img src="media/projects-section/1.jpg" alt="">
-                    <h1>Vectorify</h1>
-                    <p>User Experience Design</p>
-                    <a href="vectorify.html">Vectorify</a>
+                <div class="section-1-div-hero">
+                    <img class='hidden md:block' src="media/hero-section/card-1.png" alt="card-1">
+                    <img class='hidden md:block'src="media/hero-section/card-2.png" alt="card-2">
+                    <img class=''src="media/hero-section/hero-image.png" alt="hero-image">
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section class="section-2 w-[85%] mx-auto my-12">
+            <div class="section-2-logos grid grid-cols-2 gap-5 justify-items-center">
+
+                <img class="py-7" src="media/logos/airbnb-logo.svg" alt="airbnb-logo">
+                <img class="py-7" src="media/logos/google-logo.svg" alt="google-logo">
+                <img class="py-7" src="media/logos/microsoft-logo.svg" alt="microsoft-logo">
+                <img class="py-7" src="media/logos/fedex-logo.svg" alt="fedex-logo">
+                <img class="py-7 hidden md:block" src="media/logos/amazon-logo.svg" alt="amazon-logo">
+            </div>
+        </section>
+
+        <section class="section-3 w-[85%] mx-auto my-12">
+            <div class="section-3-div">
+                <div class="section-3-header text-[30px] text[#292e47] font-bold ">
+                    <h1 class="">Recent Projects</h1>
+                </div>
+                <div class="section-3-card flex flex-col gap-5">
+                    <div role="list" class="section-3-cards-card bg-white flex flex-col pb-4">
+                        <img src="media/projects-section/1.jpg" alt="">
+                        <h1 class="text-2xl font-medium px-[30px] pt-[30px] pb-5">Simplify</h1>
+                        <p class="text-[17px] px-[30px] pb-2">UI Design & App Development</p>
+                        <a class="p-[30px]" href="simplify.html">Learn More</a>
+                    </div>
+                    <div role="list" class="section-3-cards-card bg-white flex flex-col pb-4">
+                        <img src="media/projects-section/2.jpg" alt="">
+                        <h1 class="text-2xl font-medium px-[30px] pt-[30px] pb-5">Dashcoin</h1>
+                        <p class="text-[17px] px-[30px] pb-2">Web Development</p>
+                        <a class="p-[30px]" href="dashcoin.html">Learn More</a>
+                    </div>
+                    <div role="list" class="section-3-cards-card bg-white flex flex-col pb-4">
+                        <img src="media/projects-section/1.jpg" alt="">
+                        <h1 class="text-2xl font-medium px-[30px] pt-[30px] pb-5">Vectorify</h1>
+                        <p class="text-[17px] px-[30px] pb-2">User Experience Design</p>
+                        <a class="p-[30px]" href="vectorify.html">Vectorify</a>
+                    </div>
+                </div>
+            </div>  
+        </section>
+
+        <section class="section-4">
+            <div class="section-4-div">
+                <h1>Hear What Our Clients Have to Say</h1>
+                <p>"Circle helped us through every stage of our startup. We really enjoyed working with you."</p>
+                <div class="section-4-div-memoji">
+                    <img src="media/testimonial-section/memoji-1.png" alt="memoji-1">
+                </div>
+                <div class="section-4-div-memoji">
+                    <img src="media/testimonial-section/memoji-2.png" alt="memoji-2">
+                </div>
+                <div class="section-4-div-memoji">
+                    <img src="media/testimonial-section/memoji-3.png" alt="memoji-3">
+                </div>
+                <div class="section-4-div-memoji">
+                    <img src="media/testimonial-section/memoji-4.png" alt="memoji-4">
+                </div>
+                <div class="section-4-div-profile">
+                    <img src="media/testimonial-section/profile.png" alt="profile">
+                    <p>Kristin Watson</p> 
+                    <p>Booking.com</p>
+                </div>
+            </div>
+        </section>
+        <section class="section-5">
+            <div class="section-5-div">
+                <div class="section-5-header">
+                    <h1>Our Services</h1>
+                </div>
+                <div class="section-5-cards">
+                    <div role="list" class="section-3-cards-card">
+                        <img src="media/services-section/icons/1.svg" alt="">
+                        <h1>User Interface Design</h1>
+                        <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div role="list" class="section-3-cards-card">
+                        <img src="media/services-section/icons/2.svg" alt="">
+                        <h1>User Experience Design</h1>
+                        <p>Circle always focuses on delivering the best user experience to your customers.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div role="list" class="section-3-cards-card">
+                        <img src="media/services-section/icons/3.svg" alt="">
+                        <h1>Application Development</h1>
+                        <p>We develop high-quality mobile and web applications using the latest technology stack.</p>
+                        <a href="#">Vectorify</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-6">
+            <div class="section-6-div">
+                <h1>Do you have any questions?</h1>
+                <p>Let us help you!</p>
+                <form method="post">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Suscribe</button>
+                </form>
+            </div>
+        </section>
         
-    </section>
-    <section class="section-4">
-        <div class="section-4-div">
-            <h1>Hear What Our Clients Have to Say</h1>
-            <p>"Circle helped us through every stage of our startup. We really enjoyed working with you."</p>
-            <div class="section-4-div-memoji">
-                <img src="media/testimonial-section/memoji-1.png" alt="">
-            </div>
-            <div class="section-4-div-memoji">
-                <img src="media/testimonial-section/memoji-2.png" alt="">
-            </div>
-            <div class="section-4-div-memoji">
-                <img src="media/testimonial-section/memoji-3.png" alt="">
-            </div>
-            <div class="section-4-div-memoji">
-                <img src="media/testimonial-section/memoji-4.png" alt="">
-            </div>
-            <div class="section-4-div-profile">
-                <img src="media/testimonial-section/profile.png" alt="">
-                <p>Kristin Watson</p> 
-                <p>Booking.com</p>
-            </div>
-        </div>
-    </section>
-    <section class="section-5">
-        <div class="section-5-div">
-            <div class="section-5-header">
-                <h1>Our Services</h1>
-            </div>
-            <div class="section-3-cards">
-                <div role="list" class="section-3-cards-card">
-                    <img src="media/services-section/icons/1.svg" alt="">
-                    <h1>User Interface Design</h1>
-                    <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
-                    <a href="#">Learn More</a>
+        <footer>
+            <div class="foot">
+                <div class="foot-1">
+                    <h1>Circle</h1>
                 </div>
-                <div role="list" class="section-3-cards-card">
-                    <img src="media/services-section/icons/2.svg" alt="">
-                    <h1>User Experience Design</h1>
-                    <p>Circle always focuses on delivering the best user experience to your customers.</p>
-                    <a href="#">Learn More</a>
-                </div>
-                <div role="list" class="section-3-cards-card">
-                    <img src="media/services-section/icons/3.svg" alt="">
-                    <h1>Application Development</h1>
-                    <p>We develop high-quality mobile and web applications using the latest technology stack.</p>
-                    <a href="#">Vectorify</a>
+                <div class="foot-2">
+                    <address>2972 Westheimer Rd. Santa Ana, Illinois 85486</address>
+                </div> 
+                <div class="foot-3">
+                    <ul>
+                        <li>Team</li>
+                        <li>Services</li>
+                        <li>About Us</li>
+                    </ul>
+                    <ul>
+                        <li>Press</li>
+                        <li>Projects</li>
+                        <li>Privacy Policy</li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="section-6"></section>
-    
-
-
-    <footer>
-        
-        <div class="foot-1">
-            <h1>Circle</h1>
-        </div>
-        <div class="foot-2">
-            <address>2972 Westheimer Rd. Santa Ana, Illinois 85486</address>
-        </div> 
-        <div class="foot-3">
-            <ul>
-                <li>Team</li>
-                <li>Services</li>
-                <li>About Us</li>
-            </ul>
-            <ul>
-                <li>Press</li>
-                <li>Projects</li>
-                <li>Privacy Policy</li>
-            </ul>
-        </div>
-
-    </footer>
+        </footer>
+    </div>
     
 </body>
 </html>

@@ -7,3 +7,9 @@ Copy of https://circle-agency-35d27e.webflow.io/\
 2. Structure Creation
 3. First Hints
 4. Added media
+## Tuesday 22/11/2022
+1. HTML Index Structure
+2. CSS Section 1,2,3
+## Tuesday 22/11/2022
+1. To Do Today: CSS Index Finished
+2. To Do Today: CSS Contact

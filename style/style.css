@@ -5,3 +5,13 @@ body, html {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
+.clientImage {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.clientImage img{
+    height: 100%;
+    max-width: 100%;
+}

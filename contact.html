@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/1fdf025777.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Circle Agency</title>
+  </head>
+  <body class="mx-auto my-12 bg-[#f2f4fc]">
+    <div class="max-w-[1360px] flex flex-col mx-auto">
+      <header>
+        <div
+          class="header-div w-[85%] flex flex-row justify-between items-center mx-auto"
+        >
+          <div class="nav-1">
+            <img class="nav-1-logo w-14" src="media/logos/circle.svg" alt="" />
+          </div>
+          <nav
+            class="nav-2 hidden lg:inline text-[17px] font-medium text-[#6b708d]"
+          >
+            <ul class="flex flex-row">
+              <li class="p-5 text-blue-500">Home</li>
+              <li class="p-5">Projects</li>
+              <li class="p-5">Services</li>
+            </ul>
+          </nav>
+          <div
+            class="nav-3 hidden lg:inline bg-[#072ac8] text-white text-[17px] px-7 py-3"
+          >
+            <a href="contact.html">Contact Us</a>
+          </div>
+          <div class="nav-4 lg:hidden">
+            <p><i class="fa-solid fa-bars p-4"></i></p>
+          </div>
+        </div>
+      </header>
+      <section class="formulario lg:mt-48">
+        <div class="formulario-div w-[85%] mx-auto">
+          <h1
+            class="text-3xl md:text-6xl text-[#292e47] mt-5 mb-[30px] font-semibold"
+          >
+            Contact Us!
+          </h1>
+          <form class="grid lg:grid-cols-2 gap-4 " action="">
+            <div class="lg:col-span-2">
+              <label class="mb-3 text-xl text-[#6b708d]" for="name">Full Name *</label>
+              <input class="w-full pl-5 h-[70px] bg-[#6b708d1a] bg-opacity-10 placeholder:text-[#333333] mb-3" type="text" name="name" placeholder="Enter your full name" />
+            </div>
+            <div>
+              <label class="mb-3 text-xl text-[#6b708d]" for="name">Email *</label>
+              <input class="w-full pl-5 h-[70px] bg-[#6b708d1a] bg-opacity-10 placeholder:text-[#333333] mb-3" type="email" name="email" placeholder="Enter your mail"/>
+            </div>
+            <div>
+              <label class="mb-3 text-xl text-[#6b708d]" for="name">Phone *</label>
+              <input class="w-full pl-5 h-[70px] bg-[#6b708d1a] bg-opacity-10 placeholder:text-[#333333] mb-3" type="number" max="9" name="phone" placeholder="Enter your phone" />
+            </div>
+            <div class="lg:col-span-2">
+              <label class="mb-3 text-xl text-[#6b708d]" for="name">Message *</label>
+              <input class="w-full pl-5 h-[70px] bg-[#6b708d1a] bg-opacity-10 placeholder:text-[#333333] mb-3" type="textarea" name="message" placeholder="Write your mesage here..." />
+            </div>
+            <button class="lg:col-span-2 bg-[#072ac8] text-white h-20 w-full max-w-full px-14" type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+      <footer class="lg:mt-48">
+        <div
+          class="foot w-[85%] mx-auto my-12 flex flex-col text-center gap-8 md:place-content-between items-center md:flex-row md:flex-wrap"
+        >
+          <div class="foot-1 md:text-start">
+            <div class="foot-1-logo flex max-md:justify-center mb-7">
+              <img class="w-24" src="media/logos/circle.svg" alt="" />
+            </div>
+            <div class="foot-1-address">
+              <address>
+                2972 Westheimer Rd. Santa Ana, <br />
+                Illinois 85486
+              </address>
+            </div>
+          </div>
+          <div class="foot-2">
+            <ul
+              class="foot-2-links grid grid-cols-3 grid-rows-2 gap-4 md:gap-8 text-blue-700 font-normal text"
+            >
+              <li>Team</li>
+              <li>Services</li>
+              <li>About Us</li>
+              <li>Press</li>
+              <li>Projects</li>
+              <li>Privacy Policy</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

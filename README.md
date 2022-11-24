@@ -10,6 +10,11 @@ Copy of https://circle-agency-35d27e.webflow.io/\
 ## Tuesday 22/11/2022
 1. HTML Index Structure
 2. CSS Section 1,2,3
-## Tuesday 22/11/2022
-1. To Do Today: CSS Index Finished
-2. To Do Today: CSS Contact
+## Wednesday 23/11/2022
+1. CSS Index Mobile Finished
+## Thursday 24/11/2022
+1. To Do End HTML
+2. To Do End CSS
+## Friday 25/11/2022
+1. To Do Make JS Fetch
+2. To Do Make JS Dom Modification

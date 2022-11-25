@@ -13,8 +13,10 @@ Copy of https://circle-agency-35d27e.webflow.io/\
 ## Wednesday 23/11/2022
 1. CSS Index Mobile Finished
 ## Thursday 24/11/2022
-1. To Do End HTML
-2. To Do End CSS
+1. End HTML
+2. End CSS
 ## Friday 25/11/2022
 1. To Do Make JS Fetch
 2. To Do Make JS Dom Modification
+3. To Do Solve all details remaining
+4. Burguer menu

@@ -37,10 +37,10 @@
               >Contact Us</a
             >
           </div>
-          <div class="nav-4 lg:hidden">
+          <div id="nav-4" class="nav-4 lg:hidden">
             <a id="icon-menu" class="icon-menu">
-              <i class="fa fa-bars"></i>
-              <i class="fa fa-x"></i>
+              <i class="fa fa-bars text-xl"></i>
+              <i class="fa fa-x text-xl"></i>
             </a>
           </div>
         </div>
@@ -331,11 +331,12 @@
           ) {
             document.getElementById("menu-burger").classList.remove("active");
             document.getElementById("icon-menu").classList.remove("active");
+            document.getElementById("nav-4").classList.remove("active");
             }
           else{
             document.getElementById("menu-burger").classList.add("active");
             document.getElementById("icon-menu").classList.add("active");
-
+            document.getElementById("nav-4  ").classList.add("active");
           } 
         });
     </script>

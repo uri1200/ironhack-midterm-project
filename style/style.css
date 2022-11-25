@@ -51,16 +51,17 @@ body, html {
     position: absolute;
     left: 0;
   }
+  .nav-4.active {
+    background-color: #c8c8c8;
+  }
 
   .active .fa-x {
     display: block;
+    color: white;
   }
   .fa-x {
     display: none;
   }
   .active .fa-bars {
     display: none;
-  }
-  .active-icon {
-    background-color: #c8c8c8;
   }

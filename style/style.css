@@ -16,3 +16,41 @@ body, html {
     height: 100%;
     max-width: 100%;
 }
+ 
+  .menu-burger {
+    display: none;
+    width: 100%;
+  }
+  
+  .header-div a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    z-index: 5;
+  }
+
+  .menu-burger a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    z-index: 5;
+  }
+  
+  .header-div a:hover {
+    background-color: #ddd;
+  }
+  
+  .active {
+    background-color: #c8c8c8;
+    display: block;
+    top: 0;
+    position: absolute;
+    left: 0;
+  }
+  .active-icon {
+    background-color: #c8c8c8;
+  }

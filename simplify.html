@@ -24,11 +24,11 @@
           <nav
             class="nav-2 hidden lg:inline text-[17px] font-medium text-[#6b708d]"
           >
-            <ul class="flex flex-row">
-              <li class="p-5 text-blue-500">Home</li>
-              <li class="p-5">Projects</li>
-              <li class="p-5">Services</li>
-            </ul>
+          <ul class="flex flex-row">
+            <li class="p-5 text-blue-500"><a href="index.html">Home</a></li>
+            <li class="p-5"><a href="index.html">Projects</a></li>
+            <li class="p-5"><a href="index.html">Services</a></li>
+          </ul>
           </nav>
           <div
             class="nav-3 hidden lg:inline bg-[#072ac8] text-white text-[17px] px-7 py-3"
@@ -36,7 +36,16 @@
             <a href="contact.html">Contact Us</a>
           </div>
           <div class="nav-4 lg:hidden">
-            <p><i class="fa-solid fa-bars p-4"></i></p>
+            <nav class="menu burguer">
+                <input class="input-menu" type="checkbox" id="menu">
+                <label class="label-menu" for="menu"> <i class="fa-solid fa-bars p-4"></i> </label>
+                <ul class="lista-menu">
+                  <li class="lista-menu-li">Link 1</li>
+                  <li class="lista-menu-li">Link 2</li>
+                  <li class="lista-menu-li">Link 3</li>
+                  <li class="lista-menu-li">Link 4</li>
+                </ul>
+              </nav>
           </div>
         </div>
       </header>
@@ -102,59 +111,8 @@
             <h1 class="">Recent Projects</h1>
           </div>
           <div
-            class="section-2-card grid gap-5 md:grid-cols-2 lg:grid-cols-3 justify-items-center mt-16"
+            class="section-2-cards grid gap-5 md:grid-cols-2 lg:grid-cols-3 justify-items-center mt-16"
           >
-            <div
-              role="list"
-              class="section-2-cards-card w-full max-w-full md:max-w-[340px] md:h-[444px] bg-white flex flex-col"
-            >
-              <div class="section-2-cards-card-img">
-                <img
-                  class="w-full h-60 object-cover box-border"
-                  src="media/projects-section/2.jpg"
-                  alt="dashcoin"
-                />
-              </div>
-              <h1 class="text-2xl font-medium px-[30px] pt-[30px] pb-5">
-                Dashcoin
-              </h1>
-              <p class="text-[17px] px-[30px] pb-2">Web Development</p>
-              <a class="p-[30px]" href="dashcoin.html">Learn More</a>
-            </div>
-            <div
-              role="list"
-              class="section-2-cards-card w-full max-w-full md:max-w-[340px] md:h-[444px] bg-white flex flex-col"
-            >
-              <div class="section-2-cards-card-img">
-                <img
-                  class="w-full h-60 object-cover box-border"
-                  src="media/projects-section/3.jpg"
-                  alt="vectorify"
-                />
-              </div>
-              <h1 class="text-2xl font-medium px-[30px] pt-[30px] pb-5">
-                Vectorify
-              </h1>
-              <p class="text-[17px] px-[30px] pb-2">User Experience Design</p>
-              <a class="p-[30px]" href="vectorify.html">Learn More</a>
-            </div>
-            <div
-              role="list"
-              class="section-2-cards-card w-full max-w-full md:max-w-[340px] md:h-[444px] bg-white flex flex-col"
-            >
-              <div class="section-2-cards-card-img">
-                <img
-                  class="w-full h-60 object-cover box-border"
-                  src="media/projects-section/4.jpg"
-                  alt="vectorify"
-                />
-              </div>
-              <h1 class="text-2xl font-medium px-[30px] pt-[30px] pb-5">
-                Orbit
-              </h1>
-              <p class="text-[17px] px-[30px] pb-2">User Experience Design</p>
-              <a class="p-[30px]" href="orbit.html">Learn More</a>
-            </div>
           </div>
         </div>
       </section>
@@ -216,5 +174,11 @@
         </div>
       </footer>
     </div>
+    <script src="script/index.js"></script>
+    <script>
+        window.addEventListener("load", (event) => {
+            getProjects(3, 'side');
+        });
+    </script>
   </body>
 </html>

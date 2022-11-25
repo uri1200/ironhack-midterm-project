@@ -14,7 +14,7 @@
   </head>
   <body class="mx-auto mt-0 mb-12 lg:mt-12 bg-[#f2f4fc]">
     <div class="max-w-[1360px] flex flex-col mx-auto">
-      <header>
+      <header class="header">
         <div
           class="header-div w-[85%] flex flex-row justify-between items-center mx-auto"
         >
@@ -25,22 +25,33 @@
             class="nav-2 hidden lg:inline text-[17px] font-medium text-[#6b708d]"
           >
             <ul class="flex flex-row">
-              <li class="p-5 text-blue-500">Home</li>
-              <li class="p-5">Projects</li>
-              <li class="p-5">Services</li>
+              <li class="p-5 text-blue-500"><a href="index.html">Home</a></li>
+              <li class="p-5"><a href="#projects">Projects</a></li>
+              <li class="p-5"><a href="#services">Services</a></li>
             </ul>
           </nav>
-          <div
-            class="nav-3 hidden lg:inline"
-          >
-            <a class="bg-[#072ac8] text-white text-[17px] px-7 py-3" href="contact.html">Contact Us</a>
+          <div class="nav-3 hidden lg:inline">
+            <a
+              class="bg-[#072ac8] text-white text-[17px] px-7 py-3 hover:bg-gray-800"
+              href="contact.html"
+              >Contact Us</a
+            >
           </div>
           <div class="nav-4 lg:hidden">
-            <p><i class="fa-solid fa-bars p-4"></i></p>
+            <a class="icon-menu">
+              <i class="fa fa-bars"></i>
+              <i class="fa fa-x "></i>
+            </a>
           </div>
         </div>
       </header>
-
+      <section class="section-burguer relative">
+        <div id="menu-burger" class="menu-burger">
+          <a class="text-blue-500" href="index.html">Home</a>
+          <a href="#projects">Projects</a>
+          <a href="#services">Services</a>
+        </div>
+      </section>
       <section class="section-1">
         <div
           class="section-1-div w-[85%] mx-auto flex flex-col lg:flex-row max-lg:items-center"
@@ -61,7 +72,7 @@
               class="section-1-div-buttons flex flex-col md:flex md:flex-row lg:order-last"
             >
               <a
-                class="bg-[#072ac8] text-white text-[17px] px-7 py-3"
+                class="bg-[#072ac8] text-white text-[17px] px-7 py-3 hover:bg-gray-800"
                 href="#"
                 >Get in touch</a
               >
@@ -120,7 +131,7 @@
         </div>
       </section>
 
-      <section class="section-3">
+      <section id="projects" class="section-3">
         <div class="section-3-div w-[85%] mx-auto my-12">
           <div
             class="section-3-header text-[#292e47] font-bold text-3xl md:text-[40px]"
@@ -128,62 +139,8 @@
             <h1 class="">Recent Projects</h1>
           </div>
           <div
-            class="section-3-card grid gap-5 md:grid-cols-2 lg:grid-cols-3 justify-items-center mt-16"
-          >
-            <div
-              role="list"
-              class="section-3-cards-card w-full max-w-full md:max-w-[340px] md:h-[444px] bg-white flex flex-col"
-            >
-            <div class="section-3-cards-card-img">
-                <img
-                  class="w-full h-60 object-cover box-border "
-                  src="media/projects-section/1.jpg"
-                  alt="simplify"
-                />
-              </div>
-              <h1 class="text-2xl font-medium px-[30px] pt-[30px] pb-5">
-                Simplify
-              </h1>
-              <p class="text-[17px] px-[30px] pb-2">
-                UI Design & App Development
-              </p>
-              <a class="p-[30px]" href="simplify.html">Learn More</a>
-            </div>
-            <div
-              role="list"
-              class="section-3-cards-card w-full max-w-full md:max-w-[340px] md:h-[444px] bg-white flex flex-col"
-            >
-            <div class="section-3-cards-card-img">
-                <img
-                  class="w-full h-60 object-cover box-border "
-                  src="media/projects-section/2.jpg"
-                  alt="dashcoin"
-                />
-              </div>
-              <h1 class="text-2xl font-medium px-[30px] pt-[30px] pb-5">
-                Dashcoin
-              </h1>
-              <p class="text-[17px] px-[30px] pb-2">Web Development</p>
-              <a class="p-[30px]" href="dashcoin.html">Learn More</a>
-            </div>
-            <div
-              role="list"
-              class="section-3-cards-card w-full max-w-full md:max-w-[340px] md:h-[444px] bg-white flex flex-col"
-            >
-              <div class="section-3-cards-card-img">
-                <img
-                  class="w-full h-60 object-cover box-border "
-                  src="media/projects-section/3.jpg"
-                  alt="vectorify"
-                />
-              </div>
-              <h1 class="text-2xl font-medium px-[30px] pt-[30px] pb-5">
-                Vectorify
-              </h1>
-              <p class="text-[17px] px-[30px] pb-2">User Experience Design</p>
-              <a class="p-[30px]" href="vectorify.html">Learn More</a>
-            </div>
-          </div>
+            class="section-3-cards grid gap-5 md:grid-cols-2 lg:grid-cols-3 justify-items-center mt-16"
+          ></div>
         </div>
       </section>
 
@@ -224,7 +181,11 @@
           </div>
           <div class="section-4-div-profile text-left flex flex-row gap-2">
             <div class="clientImage">
-              <img src="media/testimonial-section/profile.png" alt="profile" />
+              <img
+                class="object-cover"
+                src="media/testimonial-section/profile.png"
+                alt="profile"
+              />
             </div>
             <div>
               <p class="text-[17px] text-[#a2d6f9]">Kristin Watson</p>
@@ -233,7 +194,7 @@
           </div>
         </div>
       </section>
-      <section class="section-5">
+      <section id="services" class="section-5">
         <div class="section-5-div w-[85%] mx-auto my-12">
           <div
             class="section-5-header text-[#292e47] font-bold text-3xl md:text-[40px]"
@@ -317,7 +278,7 @@
               placeholder="Enter your email"
             />
             <button
-              class="bg-[#072ac8] text-white h-20 max-md:w-full max-md:max-w-full px-14"
+              class="bg-[#072ac8] text-white h-20 max-md:w-full max-md:max-w-full px-14 hover:bg-gray-800"
               type="submit"
             >
               Suscribe
@@ -345,16 +306,33 @@
             <ul
               class="foot-2-links grid grid-cols-3 grid-rows-2 gap-4 md:gap-8 text-blue-700 font-normal text"
             >
-              <li>Team</li>
-              <li>Services</li>
-              <li>About Us</li>
-              <li>Press</li>
-              <li>Projects</li>
-              <li>Privacy Policy</li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Privacy Policy</a></li>
             </ul>
           </div>
         </div>
       </footer>
     </div>
+    <script src="script/index.js"></script>
+    <script>
+      window.addEventListener("load", (event) => {
+        getProjects(3, "index");
+      });
+      document
+        .querySelector(".icon-menu")
+        .addEventListener("click", (event) => {
+          console.log("hijoputa");
+          if (
+            document.getElementById("menu-burger").classList.contains("active")
+          )
+            document.getElementById("menu-burger").classList.remove("active");
+          else document.getElementById("menu-burger").classList.add("active");
+        });
+    </script>
   </body>
 </html>
+#292e47

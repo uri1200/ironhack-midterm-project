@@ -276,6 +276,7 @@
               class="h-20 pl-[70px] w-full sm:w-[393px] bg-[#ecf7ff] placeholder-gray-900 block"
               type="email"
               placeholder="Enter your email"
+              required
             />
             <button
               class="bg-[#072ac8] text-white h-20 max-md:w-full max-md:max-w-full px-14 hover:bg-gray-800"
@@ -317,28 +318,7 @@
         </div>
       </footer>
     </div>
+    <script src="script/func.js"></script>
     <script src="script/index.js"></script>
-    <script>
-      window.addEventListener("load", (event) => {
-        getProjects(3, "index");
-      });
-      document
-        .querySelector(".icon-menu")
-        .addEventListener("click", (event) => {
-          console.log("hijoputa");
-          if (
-            document.getElementById("menu-burger").classList.contains("active")
-          ) {
-            document.getElementById("menu-burger").classList.remove("active");
-            document.getElementById("icon-menu").classList.remove("active");
-            document.getElementById("nav-4").classList.remove("active");
-            }
-          else{
-            document.getElementById("menu-burger").classList.add("active");
-            document.getElementById("icon-menu").classList.add("active");
-            document.getElementById("nav-4").classList.add("active");
-          } 
-        });
-    </script>
   </body>
 </html>

@@ -18,6 +18,17 @@
     .querySelector("form")
     .addEventListener("submit", (event) => {
         event.preventDefault();
-        alert('Formulario enviado correctamente');
+        // const form = document.getElementsByTagName('form');
+        // const preLoad = new FormData(form);
+        // const load = new URLSearchParams(preLoad);
+
+        // fetch('https://httpbin.org/post', {
+        //     method: "POST",
+        //     body: load,
+        // })
+        //     .then(res => res.json())
+        //     .then(data => console.log(data))
+        //     .catch(err => console.log(err));
+        alert('Formulario enviado correctamente')
     })
 

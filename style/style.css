@@ -32,7 +32,6 @@ body, html {
   }
 
   .menu-burger a {
-    color: black;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
@@ -51,6 +50,7 @@ body, html {
     position: absolute;
     left: 0;
   }
+
   .nav-4.active {
     background-color: #c8c8c8;
   }

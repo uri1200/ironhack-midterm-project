@@ -44,12 +44,22 @@ body, html {
     background-color: #ddd;
   }
   
-  .active {
+  .menu-burger.active {
     background-color: #c8c8c8;
     display: block;
     top: 0;
     position: absolute;
     left: 0;
+  }
+
+  .active .fa-x {
+    display: block;
+  }
+  .fa-x {
+    display: none;
+  }
+  .active .fa-bars {
+    display: none;
   }
   .active-icon {
     background-color: #c8c8c8;

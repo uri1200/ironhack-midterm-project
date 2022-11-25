@@ -38,9 +38,9 @@
             >
           </div>
           <div class="nav-4 lg:hidden">
-            <a class="icon-menu">
+            <a id="icon-menu" class="icon-menu">
               <i class="fa fa-bars"></i>
-              <i class="fa fa-x "></i>
+              <i class="fa fa-x"></i>
             </a>
           </div>
         </div>
@@ -328,11 +328,16 @@
           console.log("hijoputa");
           if (
             document.getElementById("menu-burger").classList.contains("active")
-          )
+          ) {
             document.getElementById("menu-burger").classList.remove("active");
-          else document.getElementById("menu-burger").classList.add("active");
+            document.getElementById("icon-menu").classList.remove("active");
+            }
+          else{
+            document.getElementById("menu-burger").classList.add("active");
+            document.getElementById("icon-menu").classList.add("active");
+
+          } 
         });
     </script>
   </body>
 </html>
-#292e47

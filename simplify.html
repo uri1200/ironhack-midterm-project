@@ -14,7 +14,7 @@
   </head>
   <body class="mx-auto my-12 bg-[#f2f4fc]">
     <div class="max-w-[1360px] flex flex-col mx-auto">
-      <header>
+      <header class="header">
         <div
           class="header-div w-[85%] flex flex-row justify-between items-center mx-auto"
         >
@@ -24,31 +24,34 @@
           <nav
             class="nav-2 hidden lg:inline text-[17px] font-medium text-[#6b708d]"
           >
-          <ul class="flex flex-row">
-            <li class="p-5 text-blue-500"><a href="index.html">Home</a></li>
-            <li class="p-5"><a href="index.html">Projects</a></li>
-            <li class="p-5"><a href="index.html">Services</a></li>
-          </ul>
+            <ul class="flex flex-row">
+              <li class="p-5 text-blue-500"><a href="index.html">Home</a></li>
+              <li class="p-5"><a href="#projects">Projects</a></li>
+              <li class="p-5"><a href="#services">Services</a></li>
+            </ul>
           </nav>
-          <div
-            class="nav-3 hidden lg:inline bg-[#072ac8] text-white text-[17px] px-7 py-3"
-          >
-            <a href="contact.html">Contact Us</a>
+          <div class="nav-3 hidden lg:inline">
+            <a
+              class="bg-[#072ac8] text-white text-[17px] px-7 py-3 hover:bg-gray-800"
+              href="contact.html"
+              >Contact Us</a
+            >
           </div>
-          <div class="nav-4 lg:hidden">
-            <nav class="menu burguer">
-                <input class="input-menu" type="checkbox" id="menu">
-                <label class="label-menu" for="menu"> <i class="fa-solid fa-bars p-4"></i> </label>
-                <ul class="lista-menu">
-                  <li class="lista-menu-li">Link 1</li>
-                  <li class="lista-menu-li">Link 2</li>
-                  <li class="lista-menu-li">Link 3</li>
-                  <li class="lista-menu-li">Link 4</li>
-                </ul>
-              </nav>
+          <div id="nav-4" class="nav-4 lg:hidden">
+            <a id="icon-menu" class="icon-menu">
+              <i class="fa fa-bars text-xl"></i>
+              <i class="fa fa-x text-xl"></i>
+            </a>
           </div>
         </div>
       </header>
+      <section class="section-burguer relative">
+        <div id="menu-burger" class="menu-burger">
+          <a class="text-blue-500" href="index.html">Home</a>
+          <a href="#projects">Projects</a>
+          <a href="#services">Services</a>
+        </div>
+      </section>
 
       <section class="section-1">
         <div class="section-1-div w-[85%] mx-auto my-12">
@@ -103,17 +106,16 @@
         </div>
       </section>
 
-      <section class="section-2">
-        <div class="section-2-div w-[85%] mx-auto my-12">
+      <section id="projects" class="section-3">
+        <div class="section-3-div w-[85%] mx-auto my-12">
           <div
-            class="section-2-header text-[#292e47] font-bold text-3xl md:text-[40px]"
+            class="section-3-header text-[#292e47] font-bold text-3xl md:text-[40px]"
           >
             <h1 class="">Recent Projects</h1>
           </div>
           <div
-            class="section-2-cards grid gap-5 md:grid-cols-2 lg:grid-cols-3 justify-items-center mt-16"
-          >
-          </div>
+            class="section-3-cards grid gap-5 md:grid-cols-2 lg:grid-cols-3 justify-items-center mt-16"
+          ></div>
         </div>
       </section>
 
